@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 import linecache
 import time
 
-fileacc = linecache.getline(r"emailsCR.txt",1)
-filepass = linecache.getline(r"passCR.txt",1)
+fileacc = linecache.getline(r"emailsCR.txt",1) #takes the first line of the .txt file
+filepass = linecache.getline(r"passCR.txt",1) #takes the first line of the .txt file
 
 driver = webdriver.Edge()
 driver.get("https://www.crunchyroll.com/login?next=%2F")
